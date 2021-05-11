@@ -7,6 +7,8 @@ package roomshare;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import sun.tools.jconsole.AboutDialog;
 
 
 /**
@@ -32,93 +34,127 @@ public class home extends javax.swing.JFrame {
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jButton5 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        about2 = new javax.swing.JLabel();
+        ig2 = new javax.swing.JLabel();
+        te2 = new javax.swing.JLabel();
+        wt2 = new javax.swing.JLabel();
+        fb2 = new javax.swing.JLabel();
+        db2 = new javax.swing.JLabel();
+        call2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLayeredPane1.setMaximumSize(new java.awt.Dimension(100, 100));
 
-        jButton5.setBackground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/roomshare/icon/telegram64.png"))); // NOI18N
-        jButton5.setContentAreaFilled(false);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+        about2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-about-48.png"))); // NOI18N
+        about2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                about2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                about2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                about2MouseExited(evt);
             }
         });
-        jLayeredPane1.add(jButton5);
-        jButton5.setBounds(670, 280, 60, 60);
+        jLayeredPane1.add(about2);
+        about2.setBounds(600, 10, 50, 50);
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/roomshare/icon/facebook64.png"))); // NOI18N
-        jButton1.setContentAreaFilled(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+        ig2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/instagram64 .png"))); // NOI18N
+        ig2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ig2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ig2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ig2MouseExited(evt);
             }
         });
-        jLayeredPane1.add(jButton1);
-        jButton1.setBounds(670, 140, 60, 60);
+        jLayeredPane1.add(ig2);
+        ig2.setBounds(670, 350, 60, 50);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/roomshare/icon/instagram64 .png"))); // NOI18N
-        jButton2.setContentAreaFilled(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+        te2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/telegram64.png"))); // NOI18N
+        te2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                te2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                te2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                te2MouseExited(evt);
             }
         });
-        jLayeredPane1.add(jButton2);
-        jButton2.setBounds(670, 350, 60, 60);
+        jLayeredPane1.add(te2);
+        te2.setBounds(670, 280, 60, 64);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/roomshare/icon/whatsapp64.png"))); // NOI18N
-        jButton4.setContentAreaFilled(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+        wt2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/whatsapp64.png"))); // NOI18N
+        wt2.setText("jLabel5");
+        wt2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                wt2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                wt2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                wt2MouseExited(evt);
             }
         });
-        jLayeredPane1.add(jButton4);
-        jButton4.setBounds(670, 210, 60, 60);
+        jLayeredPane1.add(wt2);
+        wt2.setBounds(670, 210, 60, 60);
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/roomshare/icon/dbb.png"))); // NOI18N
-        jButton7.setContentAreaFilled(false);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+        fb2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/facebook64.png"))); // NOI18N
+        fb2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fb2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                fb2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                fb2MouseExited(evt);
             }
         });
-        jLayeredPane1.add(jButton7);
-        jButton7.setBounds(670, 70, 60, 60);
+        jLayeredPane1.add(fb2);
+        fb2.setBounds(670, 140, 60, 60);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/roomshare/icon/call.png"))); // NOI18N
-        jButton3.setContentAreaFilled(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+        db2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dbb.png"))); // NOI18N
+        db2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                db2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                db2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                db2MouseExited(evt);
             }
         });
-        jLayeredPane1.add(jButton3);
-        jButton3.setBounds(670, 10, 53, 50);
+        jLayeredPane1.add(db2);
+        db2.setBounds(670, 70, 60, 60);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/roomshare/icon/icons8-about-48.png"))); // NOI18N
-        jButton6.setContentAreaFilled(false);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+        call2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/call.png"))); // NOI18N
+        call2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                call2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                call2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                call2MouseExited(evt);
             }
         });
-        jLayeredPane1.add(jButton6);
-        jButton6.setBounds(610, 10, 50, 50);
+        jLayeredPane1.add(call2);
+        call2.setBounds(680, 10, 50, 50);
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/roomshare/icon/gfgf.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/gfgf.jpg"))); // NOI18N
         jLayeredPane1.add(jLabel1);
         jLabel1.setBounds(0, 0, 740, 410);
 
@@ -137,25 +173,32 @@ public class home extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void call2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_call2MouseClicked
         // TODO add your handling code here:
-        roomdata roomdata1 = new roomdata();
+         callus callus1 = new callus();
+         callus1.setVisible(true);
+         callus1.setDefaultCloseOperation(callus.DISPOSE_ON_CLOSE);
+         callus1.setResizable(false);
+    }//GEN-LAST:event_call2MouseClicked
+
+    private void ig2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ig2MouseClicked
+        // TODO add your handling code here:
+         instagram instagram1 = new instagram();
+        instagram1.setVisible(true);
+            instagram1.setDefaultCloseOperation(instagram.DISPOSE_ON_CLOSE);
+            instagram1.setResizable(false);
+    }//GEN-LAST:event_ig2MouseClicked
+
+    private void db2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_db2MouseClicked
+ roomdata roomdata1 = new roomdata();
         roomdata1.setVisible(true);
         roomdata1.setDefaultCloseOperation(roomdata.DISPOSE_ON_CLOSE);
-        roomdata1.setResizable(false);
-    }//GEN-LAST:event_jButton7ActionPerformed
+        roomdata1.setResizable(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_db2MouseClicked
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void fb2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fb2MouseClicked
         // TODO add your handling code here:
-        
-        about about1 = new about();
-        about1.setVisible(true);
-            about1.setDefaultCloseOperation(about.DISPOSE_ON_CLOSE);
-            about1.setResizable(false);
-    }//GEN-LAST:event_jButton6ActionPerformed
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        facebook facebook1 = new facebook();
+         facebook facebook1 = new facebook();
         facebook1.setResizable(false);
         
         
@@ -165,42 +208,116 @@ public class home extends javax.swing.JFrame {
         
         facebook1.setVisible(true);
     facebook1.setDefaultCloseOperation(facebook.DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_fb2MouseClicked
 
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        instagram instagram1 = new instagram();
-        instagram1.setVisible(true);
-            instagram1.setDefaultCloseOperation(instagram.DISPOSE_ON_CLOSE);
-            instagram1.setResizable(false);
-     
-
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        whatsapp whatsapp1 = new whatsapp();
+    private void wt2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wt2MouseClicked
+ whatsapp whatsapp1 = new whatsapp();
        whatsapp1.setVisible(true);
                 whatsapp1.setDefaultCloseOperation(whatsapp.DISPOSE_ON_CLOSE);
-               whatsapp1.setResizable(false);
-    }//GEN-LAST:event_jButton4ActionPerformed
+               whatsapp1.setResizable(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_wt2MouseClicked
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add yours handling code here:
-         telegram telegram1 = new telegram();
+    private void te2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_te2MouseClicked
+ telegram telegram1 = new telegram();
          telegram1.setVisible(true);
          telegram1.setDefaultCloseOperation(telegram1.DISPOSE_ON_CLOSE);
-       telegram1.setResizable(false);
-    }//GEN-LAST:event_jButton5ActionPerformed
+       telegram1.setResizable(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_te2MouseClicked
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void about2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_about2MouseClicked
+ 
+        about about1 = new about();
+        about1.setVisible(true);
+            about1.setDefaultCloseOperation(about.DISPOSE_ON_CLOSE);
+            about1.setResizable(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_about2MouseClicked
+
+    private void about2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_about2MouseEntered
         // TODO add your handling code here:
-         callus callus1 = new callus();
-         callus1.setVisible(true);
-         callus1.setDefaultCloseOperation(callus.DISPOSE_ON_CLOSE);
-         callus1.setResizable(false);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        
+        
+
+
+        about2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/about2.png ")));
+        
+        
+        
+    }//GEN-LAST:event_about2MouseEntered
+
+    private void about2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_about2MouseExited
+        // TODO add your handling code here:
+        about2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-about-48.png ")));
+    }//GEN-LAST:event_about2MouseExited
+
+    private void call2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_call2MouseEntered
+        // TODO add your handling code here:
+        call2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/call2.png ")));
+    }//GEN-LAST:event_call2MouseEntered
+
+    private void db2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_db2MouseEntered
+        // TODO add your handling code here:
+        db2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dbb2.png ")));
+    }//GEN-LAST:event_db2MouseEntered
+
+    private void call2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_call2MouseExited
+        // TODO add your handling code here:
+                call2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/call.png ")));
+
+    }//GEN-LAST:event_call2MouseExited
+
+    private void db2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_db2MouseExited
+        // TODO add your handling code here:
+                db2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/dbb.png ")));
+
+    }//GEN-LAST:event_db2MouseExited
+
+    private void fb2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fb2MouseEntered
+        // TODO add your handling code here:
+                fb2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/facebook2.png ")));
+
+    }//GEN-LAST:event_fb2MouseEntered
+
+    private void fb2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fb2MouseExited
+        // TODO add your handling code here:
+                fb2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/facebook64.png")));
+
+    }//GEN-LAST:event_fb2MouseExited
+
+    private void wt2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wt2MouseEntered
+        // TODO add your handling code here:
+                wt2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/whatsapp2.png ")));
+
+    }//GEN-LAST:event_wt2MouseEntered
+
+    private void wt2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_wt2MouseExited
+        // TODO add your handling code here:
+                wt2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/whatsapp64.png ")));
+
+    }//GEN-LAST:event_wt2MouseExited
+
+    private void te2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_te2MouseEntered
+        // TODO add your handling code here:
+                te2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/telegram2.png ")));
+
+    }//GEN-LAST:event_te2MouseEntered
+
+    private void te2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_te2MouseExited
+        // TODO add your handling code here:
+                        te2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/telegram64.png ")));
+
+    }//GEN-LAST:event_te2MouseExited
+
+    private void ig2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ig2MouseEntered
+        // TODO add your handling code here:
+                        ig2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/instagram2.png ")));
+
+    }//GEN-LAST:event_ig2MouseEntered
+
+    private void ig2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ig2MouseExited
+        // TODO add your handling code here:
+                        ig2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/instagram64.png ")));
+
+    }//GEN-LAST:event_ig2MouseExited
 
     /**
      * @param args the command line arguments
@@ -239,15 +356,15 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JLabel about2;
+    private javax.swing.JLabel call2;
+    private javax.swing.JLabel db2;
+    private javax.swing.JLabel fb2;
+    private javax.swing.JLabel ig2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JLabel te2;
+    private javax.swing.JLabel wt2;
     // End of variables declaration//GEN-END:variables
 
     void setHorizontalAlignment(int CENTER) {
