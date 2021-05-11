@@ -14,14 +14,10 @@ import javax.swing.table.DefaultTableModel;
 import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 
+
+
 /**
- *String idtest="0";
-String nametest="0";
-String emailtest="0";
-String phonetest="0";
-String Gendertest="0";
-String Countrytest="0";
-String Date_of_Birthtest="0";
+ 
 
  * @author ali01
  */
